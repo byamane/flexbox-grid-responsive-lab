@@ -88,7 +88,7 @@ img {
 }
 
 
-.contact {
+#contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 60px;
@@ -154,9 +154,9 @@ img {
   margin: 0;
 }
 
-.contact {
+#contact {
   grid-area: contact;
-  height: 9.25vh;
+  height: 100%;
 }
 
 #phone {
