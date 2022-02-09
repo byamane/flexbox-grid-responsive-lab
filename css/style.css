@@ -88,7 +88,7 @@ img {
 }
 
 
-#contact {
+.contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 60px;
@@ -114,36 +114,81 @@ img {
 }
 
 @media only screen and (min-width: 768px) {
-  body {
-    /* tablet - two column display */
-    grid-area: content;
-    background-color: turquoise;
-    color: teal;
-  }
+main {
+  display: grid;
+  text-align: left;
+  width: 600px;
+  grid-template-columns: 40% 60%; 
+  grid-template-rows: auto .75fr .75fr .1fr;
+  grid-template-areas: 
+  "status name"
+  "img occupation"
+  "img brand"
+  "contact offer";
+}
 
+#name {
+  height: 50px;
+  margin: 0;
+  padding-top: 15px;
+}
 
+#status {
+  text-align: left;
+  padding: 5px 0 0 5px;
+}
 
+#occupation > p {
+  margin: 10px 0 0 0;
+}
 
+img {
+  grid-area: img;
+  margin: 0 auto;
+}
 
+#brand {
+  display: inline;
+  background-color: lightgray;
+  height: 75px;
+  margin: 0;
+}
 
+.contact {
+  grid-area: contact;
+  height: 9.25vh;
+}
 
+#phone {
+  font-size: 200%;
+}
 
+#bubble {
+  font-size: 200%;
+}
 
+#brand > p {
+  border-left: #5cb471 4px solid;
+  padding: 0 20px 0 8px;
+  font-size: 1.6rem;
+  color: black;
+  margin: 0;
+  margin-top: 10px;
+}
 
+#offer {
+  grid-area: offer;
+  font-size: 1.8rem;
+  padding: 10px;
+  margin: 0;
+}
 
+#offer > p {
+  margin: 0;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+#name, #occupation, #brand, #offer {
+  background-color: lightgray;
+  padding-left: 20px;
+}
 }
