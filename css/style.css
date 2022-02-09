@@ -29,6 +29,10 @@ body {
   min-height: 100vh;
 }
 
+p {
+  margin: 10px;
+}
+
 main {
   width: 300px;
   background-color: white;
@@ -50,17 +54,96 @@ img {
   border: .5rem solid #72dd8b;
 }
 
+#name {
+  display: grid;
+  margin: 10px 0 20px 0;
+  font-size: 3rem;
+}
+
+#occupation {
+  background-color: lightgray;
+  display: grid;
+  grid-template-rows: 3.5rem;
+}
+
+#offer {
+  display: grid;
+  font-size: 2.5rem;
+  margin: 5px 0 20px 0;
+  grid-template-rows: 3.5rem;
+}
+
+#price {
+  color: rgb(80, 80, 80);
+}
+
+#brand {
+  height: 0px;
+  color: white;
+}
+
+
+#occupation > p {
+  background-color: lightgray;
+}
+
+
 #contact {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: ;
+  height: 60px;
 }
+
 
 #phone {
   background-color: #72dd8b;
+  margin: 0;
+  font-size: 125%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 #bubble {
   background-color: #5cb471;
+  margin: 0;
+  font-size: 150%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
+@media only screen and (min-width: 768px) {
+  body {
+    /* tablet - two column display */
+    grid-area: content;
+    background-color: turquoise;
+    color: teal;
+  }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+}
